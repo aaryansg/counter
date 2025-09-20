@@ -40,3 +40,23 @@
 .read-the-docs {
   color: #888;
 }
+
+.counter-box {
+	border: 5px solid transparent; 
+	border-color: #22b14c;
+	padding: 10px;
+}
+button{
+	margin: 10px;
+}
+.add{
+	background-image: linear-gradient(to top, #4875d0, #96aee2);
+}
+
+.reset{
+	background-image: linear-gradient(to top, #58a423, #b3d39f);
+}
+
+.sub{
+	background-image: linear-gradient(to top, #262b2b, #575b5e);
+}

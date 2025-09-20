@@ -7,10 +7,15 @@ function App() {
   return (
     <>
       <h1 className = "counter-heading">Counter</h1>
-	  <div className = 'counter'> Count: {count} </div>
-	  <div className = 'button-holder'>
-		<button className = 'plus' onClick = {() => setCount(count + 1)}>+</button>
-		<button className = 'minus' onClick = {() => setCount(count - 1)}>-</button>
+	  <div className = 'counter-box'>
+	    <label>
+			Count: <input type = 'number' value ={count} onChange={e => setCount(Number(e.target.value))} />
+		</label>
+		<div className = 'button-holder'>
+			<button className = 'add' onClick = {() => setCount(count + 1)}>Add</button>
+			<button className = 'sub' onClick = {() => setCount(count - 1)}>Subtract</button>
+			<button className = 'reset' onClick = {() => setCount(0)}>Reset</button>
+		</div>
 	  </div>
     </>
   )
